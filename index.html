@@ -16,7 +16,7 @@
                 <img src="img/logo.png" alt="main-logo" class="logo">
                 <form action="#" class="search">
                     <input type="text" class="search__input" placeholder="Search Hotels">
-                    <button class="search_button">
+                    <button class="search__button">
                         <svg class="search__icon">
                             <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
                         </svg>
@@ -37,13 +37,41 @@
                     </div>
                     <div class="user-nav__user">
                         <img src="img/user-3.jpg" alt="user-image" class="user-nav__user-photo">
-                        <span class="user-nav__user-name">Name</span>
+                        <span class="user-nav__user-name">Vinson</span>
                     </div>
                 </nav>
             </header>
             <div class="content">
                 <nav class="sidebar">
-                    Sidebar
+                    <ul class="sidebar__list">
+                        <li class="sidebar__item sidebar__item--active">
+                            <svg class="sidebar__icon">
+                                <use xlink:href="img/sprite.svg#icon-home"></use>
+                            </svg>
+                            <a href="#" class="sidebar__link">hotel</a>
+                        </li>
+                        <li class="sidebar__item">
+                            <svg class="sidebar__icon">
+                                <use xlink:href="img/sprite.svg#icon-aircraft"></use>
+                            </svg>
+                            <a href="#" class="sidebar__link">flight</a>
+                        </li>
+                        <li class="sidebar__item">
+                            <svg class="sidebar__icon">
+                                <use xlink:href="img/sprite.svg#icon-key"></use>
+                            </svg>
+                            <a href="#" class="sidebar__link">car rental</a>
+                        </li>
+                        <li class="sidebar__item">
+                            <svg class="sidebar__icon">
+                                <use xlink:href="img/sprite.svg#icon-map"></use>
+                            </svg>
+                            <a href="#" class="sidebar__link">tours</a>
+                        </li>
+                    </ul>
+                    <div class="legal">
+                        &copy; 2023 by Vinson Xavier. All rights reserved.
+                    </div>
                 </nav>
                 <main class="hotel-view">
                     Hotel view
