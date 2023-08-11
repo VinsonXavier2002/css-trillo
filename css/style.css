@@ -25,6 +25,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -44,6 +47,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 31.25em) {
+    .search {
+      order: 1;
+      flex: 0 0 95%; } }
   .search__input {
     background-color: var(--color-grey-light-2);
     border: none;
@@ -117,9 +124,19 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+  @media only screen and (max-width: 56.25em) {
+    .sidebar {
+      position: sticky;
+      top: 0; } }
   .sidebar__list {
     list-style: none;
     margin-top: 3rem; }
+    @media only screen and (max-width: 56.25em) {
+      .sidebar__list {
+        display: flex;
+        margin: 0; }
+        .sidebar__list > * {
+          flex: 1; } }
   .sidebar__item {
     display: flex;
     align-items: center;
@@ -127,6 +144,15 @@ body {
     padding: 1.5rem 2.5rem;
     cursor: pointer;
     position: relative; }
+    @media only screen and (max-width: 56.25em) {
+      .sidebar__item {
+        justify-content: center;
+        padding: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .sidebar__item {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1.25rem 1.5rem; } }
     .sidebar__item::before {
       content: "";
       height: 100%;
@@ -139,6 +165,9 @@ body {
       transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s; }
     .sidebar__item:not(:last-child) {
       margin-bottom: 1rem; }
+      @media only screen and (max-width: 56.25em) {
+        .sidebar__item:not(:last-child) {
+          margin: 0; } }
     .sidebar__item:hover::before, .sidebar__item--active::before {
       transform: scaleY(1);
       width: 100%; }
@@ -155,10 +184,16 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     z-index: 1; }
+    @media only screen and (max-width: 26.25em) {
+      .sidebar__link:link, .sidebar__link:visited {
+        font-size: 1.2rem; } }
   .sidebar .legal {
     color: var(--color-grey-dark-3);
     text-align: center;
     padding: 2.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .sidebar .legal {
+        display: none; } }
 
 .gallery {
   display: flex; }
@@ -171,14 +206,34 @@ body {
   align-items: center;
   background-color: #fff;
   border-bottom: var(--border-light); }
+  @media only screen and (max-width: 26.25em) {
+    .overview {
+      flex-wrap: wrap;
+      padding: 2rem; } }
+  .overview__left-pane {
+    display: flex;
+    align-items: center;
+    margin-right: auto; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__left-pane {
+        flex-direction: column;
+        align-items: start;
+        padding: 0.75rem 2rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .overview__left-pane {
+        padding: 0; } }
   .overview__heading {
     font-size: 2.25rem;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 2.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__heading {
+        line-height: 1.4;
+        font-size: 1.75rem;
+        padding: 0; } }
   .overview__stars {
-    margin-right: auto;
     display: flex; }
   .overview__star-icon {
     width: 2rem;
@@ -202,11 +257,35 @@ body {
     padding: 0 2rem;
     align-items: center;
     margin-left: 2.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__rating {
+        padding: 0 1.5rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .overview__rating {
+        flex: 0 0 100%;
+        margin-left: unset;
+        margin-top: 1rem;
+        border-radius: 100px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem; } }
     .overview__rating-number {
       font-size: 2.25rem;
       font-weight: 300; }
+      @media only screen and (max-width: 37.5em) {
+        .overview__rating-number {
+          font-size: 1.75rem; } }
     .overview__rating-votes {
-      margin-top: -0.5rem; }
+      margin-top: -0.5rem;
+      text-transform: uppercase; }
+      @media only screen and (max-width: 37.5em) {
+        .overview__rating-votes {
+          font-size: 0.75rem; } }
+      @media only screen and (max-width: 26.25em) {
+        .overview__rating-votes {
+          margin-top: unset; } }
 
 .link-btn {
   border: none;
@@ -260,6 +339,8 @@ body {
   align-items: center; }
   .recommend__count {
     margin-right: auto; }
+  .recommend__friends {
+    display: flex; }
   .recommend__photo {
     height: 4rem;
     width: 4rem;
@@ -284,6 +365,10 @@ body {
   position: relative; }
   .review:not(:last-child) {
     margin-bottom: 4rem; }
+    @media only screen and (max-width: 56.25em) {
+      .review:not(:last-child) {
+        padding: 2rem;
+        margin-bottom: 2.5rem; } }
   .review::before {
     content: "\201C";
     position: absolute;
@@ -374,6 +459,10 @@ body {
   margin: 8rem auto;
   box-shadow: var(--shadow-dark);
   min-height: 50rem; }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0;
+      max-width: 100%; } }
 
 .header {
   height: 7rem;
@@ -383,9 +472,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 31.25em) {
+    .header {
+      flex-wrap: wrap;
+      height: 11rem;
+      align-content: space-evenly; } }
 
 .content {
   display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .content {
+      flex-direction: column; } }
 
 .sidebar {
   background-color: var(--color-grey-dark-1);
@@ -393,14 +490,20 @@ body {
 
 .hotel-view {
   background-color: #fff;
-  flex: 1 1 0;
-  min-height: 80rem; }
+  flex: 1; }
 
 .detail {
   display: flex;
   padding: 4rem;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--border-light); }
+  @media only screen and (max-width: 56.25em) {
+    .detail {
+      padding: 2.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .detail {
+      flex-direction: column;
+      gap: 3rem; } }
 
 .description {
   font-size: 1.4rem;
@@ -409,6 +512,13 @@ body {
   margin-right: 4rem;
   padding: 4rem;
   box-shadow: var(--shadow-light); }
+  @media only screen and (max-width: 56.25em) {
+    .description {
+      padding: 2rem;
+      margin-right: 2.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .description {
+      margin-right: 0; } }
 
 .reviews {
   flex: 1;
