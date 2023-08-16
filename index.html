@@ -1,231 +1,242 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
-        <title>trillo &mdash; Your all-in-one booking app</title>
-    </head>
+    <title>trillo &mdash; Your all-in-one booking app</title>
+  </head>
 
-    <body>
-        <div class="container">
-            <header class="header">
-                <img src="img/logo.png" alt="main-logo" class="logo" />
-                <form action="#" class="search">
-                    <input type="text" class="search__input" placeholder="Search Hotels" />
-                    <button class="search__button">
-                        <svg class="search__icon">
-                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
-                        </svg>
-                    </button>
-                </form>
-                <nav class="user-nav">
-                    <div class="user-nav__icon-box">
-                        <svg class="user-nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
-                        </svg>
-                        <span class="user-nav__notification-badge">5</span>
-                    </div>
-                    <div class="user-nav__icon-box">
-                        <svg class="user-nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-chat"></use>
-                        </svg>
-                        <span class="user-nav__notification-badge">10</span>
-                    </div>
-                    <div class="user-nav__user">
-                        <img src="img/user-3.jpg" alt="user-image" class="user-nav__user-photo" />
-                        <span class="user-nav__user-name">Vinson</span>
-                    </div>
-                </nav>
-            </header>
-            <div class="content">
-                <nav class="sidebar">
-                    <ul class="sidebar__list">
-                        <li class="sidebar__item sidebar__item--active">
-                            <svg class="sidebar__icon">
-                                <use xlink:href="img/sprite.svg#icon-home"></use>
-                            </svg>
-                            <a href="#" class="sidebar__link">hotel</a>
-                        </li>
-                        <li class="sidebar__item">
-                            <svg class="sidebar__icon">
-                                <use xlink:href="img/sprite.svg#icon-aircraft"></use>
-                            </svg>
-                            <a href="#" class="sidebar__link">flight</a>
-                        </li>
-                        <li class="sidebar__item">
-                            <svg class="sidebar__icon">
-                                <use xlink:href="img/sprite.svg#icon-key"></use>
-                            </svg>
-                            <a href="#" class="sidebar__link">car rental</a>
-                        </li>
-                        <li class="sidebar__item">
-                            <svg class="sidebar__icon">
-                                <use xlink:href="img/sprite.svg#icon-map"></use>
-                            </svg>
-                            <a href="#" class="sidebar__link">tours</a>
-                        </li>
-                    </ul>
-                    <div class="legal">&copy; 2023 by Vinson Xavier. All rights reserved.</div>
-                </nav>
-                <main class="hotel-view">
-                    <div class="gallery">
-                        <figure class="gallery__item">
-                            <img
-                                src="img/hotel-1.jpg"
-                                alt="Image of hotel 1"
-                                class="gallery__photo"
-                            />
-                        </figure>
-                        <figure class="gallery__item">
-                            <img
-                                src="img/hotel-2.jpg"
-                                alt="Image of hotel 2"
-                                class="gallery__photo"
-                            />
-                        </figure>
-                        <figure class="gallery__item">
-                            <img
-                                src="img/hotel-3.jpg"
-                                alt="Image of hotel 3"
-                                class="gallery__photo"
-                            />
-                        </figure>
-                    </div>
-                    <div class="overview">
-                        <div class="overview__left-pane">
-                            <h1 class="overview__heading">Hotel Muniyaandi Vilas</h1>
-                            <div class="overview__stars">
-                                <svg class="overview__star-icon">
-                                    <use xlink:href="img/sprite.svg#icon-star"></use>
-                                </svg>
-                                <svg class="overview__star-icon">
-                                    <use xlink:href="img/sprite.svg#icon-star"></use>
-                                </svg>
-                                <svg class="overview__star-icon">
-                                    <use xlink:href="img/sprite.svg#icon-star"></use>
-                                </svg>
-                                <svg class="overview__star-icon">
-                                    <use xlink:href="img/sprite.svg#icon-star"></use>
-                                </svg>
-                                <svg class="overview__star-icon">
-                                    <use xlink:href="img/sprite.svg#icon-star"></use>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="overview__location">
-                            <svg class="overview__location-icon">
-                                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
-                            </svg>
-                            <button class="link-btn">Madurai, Tamil Nadu</button>
-                        </div>
-                        <div class="overview__rating">
-                            <p class="overview__rating-number">8.6</p>
-                            <p class="overview__rating-votes">429 votes</p>
-                        </div>
-                    </div>
-                    <div class="detail">
-                        <div class="description">
-                            <p class="paragraph">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi
-                                dignissimos debitis ratione sapiente saepe. Accusantium cumque,
-                                quas, ut corporis incidunt deserunt quae architecto voluptate.
-                            </p>
-                            <p class="paragraph">
-                                Accusantium cumque, quas, ut corporis incidunt deserunt quae
-                                architecto voluptate delectus, inventore iure aliquid aliquam.
-                            </p>
-                            <ul class="list">
-                                <li class="list__item">Close to the beach</li>
-                                <li class="list__item">Breakfast included</li>
-                                <li class="list__item">Free airport shuttle</li>
-                                <li class="list__item">Free wifi in all rooms</li>
-                                <li class="list__item">Air conditioning and heating</li>
-                                <li class="list__item">Pets allowed</li>
-                                <li class="list__item">We speak all languages</li>
-                                <li class="list__item">Prefect for families</li>
-                            </ul>
-                            <div class="recommend">
-                                <p class="recommend__count">
-                                    John and 3 other friends recommend this hotel.
-                                </p>
-                                <div class="recommend__friends">
-                                    <img
-                                        src="img/user-1.jpg"
-                                        alt="Friend-1"
-                                        class="recommend__photo"
-                                    />
-                                    <img
-                                        src="img/user-4.jpg"
-                                        alt="Friend-2"
-                                        class="recommend__photo"
-                                    />
-                                    <img
-                                        src="img/user-5.jpg"
-                                        alt="Friend-3"
-                                        class="recommend__photo"
-                                    />
-                                    <img
-                                        src="img/user-6.jpg"
-                                        alt="Friend-4"
-                                        class="recommend__photo"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews">
-                            <div class="review">
-                                <p class="review__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-                                    doloremque architecto dicta animi, totam, itaque officia ex.
-                                </p>
-                                <div class="review__user">
-                                    <img
-                                        src="./img/user-5.jpg"
-                                        alt="user-5-img"
-                                        class="review__user-img"
-                                    />
-                                    <div class="review__user-details">
-                                        <p class="review__user-name">Lionel Messi</p>
-                                        <p class="review__user-date">June 13th, 2023</p>
-                                    </div>
-                                    <p class="review__user-rating">7.8</p>
-                                </div>
-                            </div>
-                            <div class="review">
-                                <p class="review__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-                                    doloremque architecto dicta animi.
-                                </p>
-                                <div class="review__user">
-                                    <img
-                                        src="./img/user-4.jpg"
-                                        alt="user-4-img"
-                                        class="review__user-img"
-                                    />
-                                    <div class="review__user-details">
-                                        <p class="review__user-name">Cristiano Ronaldo</p>
-                                        <p class="review__user-date">February 4th, 2023</p>
-                                    </div>
-                                    <p class="review__user-rating">8.3</p>
-                                </div>
-                            </div>
-                            <button class="link-btn">Show All <span>&rarr;</span></button>
-                        </div>
-                    </div>
-                    <div class="cta">
-                        <h2 class="cta__text">Hurry up! Only 4 rooms left</h2>
-                        <button class="cta__button"><span>Only 4 rooms left</span></button>
-                    </div>
-                </main>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="img/logo.png" alt="main-logo" class="logo" />
+        <form action="#" class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search Hotels"
+          />
+          <button class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav__notification-badge">5</span>
+          </div>
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user-nav__notification-badge">10</span>
+          </div>
+          <div class="user-nav__user">
+            <img
+              src="img/user-3.jpg"
+              alt="user-image"
+              class="user-nav__user-photo"
+            />
+            <span class="user-nav__user-name">Vinson</span>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="sidebar__list">
+            <li class="sidebar__item sidebar__item--active">
+              <svg class="sidebar__icon">
+                <use xlink:href="img/sprite.svg#icon-home"></use>
+              </svg>
+              <a href="#" class="sidebar__link">hotel</a>
+            </li>
+            <li class="sidebar__item">
+              <svg class="sidebar__icon">
+                <use xlink:href="img/sprite.svg#icon-aircraft"></use>
+              </svg>
+              <a href="#" class="sidebar__link">flight</a>
+            </li>
+            <li class="sidebar__item">
+              <svg class="sidebar__icon">
+                <use xlink:href="img/sprite.svg#icon-key"></use>
+              </svg>
+              <a href="#" class="sidebar__link">car rental</a>
+            </li>
+            <li class="sidebar__item">
+              <svg class="sidebar__icon">
+                <use xlink:href="img/sprite.svg#icon-map"></use>
+              </svg>
+              <a href="#" class="sidebar__link">tours</a>
+            </li>
+          </ul>
+          <div class="legal">
+            &copy; 2023 by Vinson Xavier. All rights reserved.
+          </div>
+        </nav>
+        <main class="hotel-view">
+          <div class="gallery">
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-1.jpg"
+                alt="Image of hotel 1"
+                class="gallery__photo"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-2.jpg"
+                alt="Image of hotel 2"
+                class="gallery__photo"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-3.jpg"
+                alt="Image of hotel 3"
+                class="gallery__photo"
+              />
+            </figure>
+          </div>
+          <div class="overview">
+            <div class="overview__left-pane">
+              <h1 class="overview__heading">Hotel Muniyaandi Vilas</h1>
+              <div class="overview__stars">
+                <svg class="overview__star-icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="overview__star-icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="overview__star-icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="overview__star-icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="overview__star-icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+              </div>
             </div>
-        </div>
-    </body>
+            <div class="overview__location">
+              <svg class="overview__location-icon">
+                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+              </svg>
+              <button class="link-btn">Madurai, Tamil Nadu</button>
+            </div>
+            <div class="overview__rating">
+              <p class="overview__rating-number">8.6</p>
+              <p class="overview__rating-votes">429 votes</p>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="description">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                nisi dignissimos debitis ratione sapiente saepe. Accusantium
+                cumque, quas, ut corporis incidunt deserunt quae architecto
+                voluptate.
+              </p>
+              <p class="paragraph">
+                Accusantium cumque, quas, ut corporis incidunt deserunt quae
+                architecto voluptate delectus, inventore iure aliquid aliquam.
+              </p>
+              <ul class="list">
+                <li class="list__item">Close to the beach</li>
+                <li class="list__item">Breakfast included</li>
+                <li class="list__item">Free airport shuttle</li>
+                <li class="list__item">Free wifi in all rooms</li>
+                <li class="list__item">Air conditioning and heating</li>
+                <li class="list__item">Pets allowed</li>
+                <li class="list__item">We speak all languages</li>
+                <li class="list__item">Prefect for families</li>
+              </ul>
+              <div class="recommend">
+                <p class="recommend__count">
+                  John and 3 other friends recommend this hotel.
+                </p>
+                <div class="recommend__friends">
+                  <img
+                    src="img/user-1.jpg"
+                    alt="Friend-1"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-4.jpg"
+                    alt="Friend-2"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-5.jpg"
+                    alt="Friend-3"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-6.jpg"
+                    alt="Friend-4"
+                    class="recommend__photo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="reviews">
+              <div class="review">
+                <p class="review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi, totam, itaque officia ex.
+                </p>
+                <div class="review__user">
+                  <img
+                    src="./img/user-5.jpg"
+                    alt="user-5-img"
+                    class="review__user-img"
+                  />
+                  <div class="review__user-details">
+                    <p class="review__user-name">Lionel Messi</p>
+                    <p class="review__user-date">June 13th, 2023</p>
+                  </div>
+                  <p class="review__user-rating">7.8</p>
+                </div>
+              </div>
+              <div class="review">
+                <p class="review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi.
+                </p>
+                <div class="review__user">
+                  <img
+                    src="./img/user-4.jpg"
+                    alt="user-4-img"
+                    class="review__user-img"
+                  />
+                  <div class="review__user-details">
+                    <p class="review__user-name">Cristiano Ronaldo</p>
+                    <p class="review__user-date">February 4th, 2023</p>
+                  </div>
+                  <p class="review__user-rating">8.3</p>
+                </div>
+              </div>
+              <button class="link-btn">Show All <span>&rarr;</span></button>
+            </div>
+          </div>
+          <div class="cta">
+            <h2 class="cta__text">Hurry up! Only 4 rooms left</h2>
+            <button class="cta__button"><span>Only 4 rooms left</span></button>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
 </html>
