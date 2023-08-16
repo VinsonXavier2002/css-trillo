@@ -171,9 +171,7 @@
       left: 0;
       background-color: var(--color-primary);
       transform: scaleY(0);
-      transition:
-        transform 0.2s,
-        width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+      transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
         background-color 0.1s;
     }
 
@@ -413,17 +411,19 @@
     padding: 0.5rem 0;
 
     &::before {
-      // content: url(../img/chevron-thin-right.svg);
+      content: url(../img/chevron-thin-right.svg);
       content: "";
       width: 1rem;
       height: 1rem;
       display: inline-block;
       margin-right: 0.75rem;
       background-color: var(--color-primary);
-      -webkit-mask-image: url(../img/chevron-thin-right.svg);
-      mask-image: url(../img/chevron-thin-right.svg);
-      -webkit-mask-size: cover;
-      mask-size: cover;
+      @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+        -webkit-mask-image: url(../img/chevron-thin-right.svg);
+        mask-image: url(../img/chevron-thin-right.svg);
+        -webkit-mask-size: cover;
+        mask-size: cover;
+      }
     }
   }
 }
@@ -470,6 +470,7 @@
   background-color: #fff;
   padding: 3rem;
   position: relative;
+  overflow: hidden;
 
   &:not(:last-child) {
     margin-bottom: 4rem;
